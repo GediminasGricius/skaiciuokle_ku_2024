@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-6 mt-5">
+        <div class="card">
+            <div class="card-header">Skaičiuoklė</div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="skaicius" class="form-label">Įveskite pirmą skaičių</label>
+                    <input id="skaicius" class="form-control" type="text" [(ngModel)]="skaicius" placeholder="Įveskite skaičių">
+                </div>
+                 <div class="mb-3">
+                    <label for="daugiklis" class="form-label">Įveskite daugiklį</label>
+                    <input id="daugiklis" class="form-control" type="text" [(ngModel)]="daugiklis" placeholder="Įveskite daugiklį">
+                 </div>
+
+                 <button class="btn btn-success" (click)="skaiciuoti()">Skaičiuoti</button>
+               
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6 mt-5">
+        <div class="card">
+            <div class="card-header">Rezultatas</div>
+            <div class="card-body">
+                {{ rezultatas }}
+            </div>
+        </div>
+
+    </div>
+</div>
